@@ -38,13 +38,13 @@ func ExampleYearsTwo() {
 // BenchmarkYears gives an example of the expected output from Years
 func BenchmarkYears(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Years(i)
+		Years(10)
 	}
 }
 
 // BenchmarkYearsTwo gives an example of the expected output from YearsTwo
 func BenchmarkYearsTwo(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		YearsTwo(i)
+		YearsTwo(10)
 	}
 }
