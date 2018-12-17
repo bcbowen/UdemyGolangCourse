@@ -17,5 +17,6 @@ func UseCount(s string) map[string]int {
 
 // Count returns the number of words in a given string
 func Count(s string) int {
-	return len(strings.Split(s, " "))
+	//return len(strings.Split(s, " "))
+	return len(strings.Fields(s))
 }

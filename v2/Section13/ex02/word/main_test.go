@@ -10,8 +10,9 @@ const testString = "you dipped a chip, you took a bite, you dipped it again"
 //TestCount tests word.Count()
 func TestCount(t *testing.T) {
 	result := Count(testString)
-	if result != 6 {
-		t.Error("want", 12, "got", result)
+	expected := 12
+	if result != expected {
+		t.Error("want", expected, "got", result)
 	}
 
 }
